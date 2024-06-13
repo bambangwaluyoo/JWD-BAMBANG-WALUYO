@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(0, 25, 253);
+  margin: 0;
+}
+main {
+  padding: 0 15px;
+}
+.img-logo {
+  width: 10%;
+}
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  background-color: rgb(204, 204, 204);
+  box-shadow: 0 1px 1px 1px #000;
+}
+
+.wisata {
+  display: flex;
+}
+
+.paket {
+  width: 66.66%;
+  display: flex;
+  gap: 5px;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+  width: 33.33%;
+  padding: 0;
+  margin: 0;
+}
+iframe {
+  border-radius: 5px;
+}
+.kartu {
+  background-color: #f8f1f1;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin: 0;
+  box-shadow: 0 1px 1px 1px #000;
+}
+
+.kartu h3,
+p,
+a {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.kartu img {
+  height: 343px;
+  width: 343px;
+  padding-left: 0.5px;
+}
+
+.tabel tr td {
+  border: 1px 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  border: solid;
+}
+.tabel tr {
+  background-color: burlywood;
+}
+
+footer {
+  padding: 30px 15px 15px 15px;
+}
+nav ul {
+  list-style-type: none;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;
+  color: aliceblue;
+}
+nav ul li a:hover {
+  background-color: cadetblue;
+}
+/* Media queries untuk perangkat Android */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 15px;
+  }
+
+  .paket,
+  .video {
+    width: 100%; /* Tampilan layar penuh untuk perangkat Android */
+  }
+
+  .kartu img {
+    width: 100%;
+    height: auto;
+  }
+}
